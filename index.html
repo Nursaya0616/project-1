@@ -18,13 +18,13 @@
     </div>
   </section>
 
-  <section class="device" id="headphones">
+
+
+    <section class="device" id="headphones">
     <h2>Наушники</h2>
     <div class="device-box">
       <div class="cable">Кабель: <span class="cstate">работает</span></div>
-      <button onclick="breakHeadphones()">Сломать</button>
-      <button onclick="repairHeadphones()">Починить</button>
-      <button onclick="breakHeadphones()">Сломать</button>
+      <button onclick="breakHeadphones()">Fix</button>
       <button onclick="repairHeadphones()">Починить</button>
     </div>
   </section>
@@ -32,13 +32,13 @@
   <script>
     // Симуляция изменений — чтобы показать версионирование
     function breakPhone() {
-      document.querySelector('#phone .state').textContent = 'сломанный';
+      document.querySelector('#phone .state').textContent = 'сломан';
     }
     function repairPhone() {
       document.querySelector('#phone .state').textContent = 'целый';
     }
     function breakHeadphones() {
-      document.querySelector('#headphones .cstate').textContent = 'сломаны';
+      document.querySelector('#headphones .cstate').textContent = 'сломан';
     }
     function repairHeadphones() {
       document.querySelector('#headphones .cstate').textContent = 'работают';
